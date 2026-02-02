@@ -26,31 +26,43 @@ function App() {
   }
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bg})`,
-        height: '100vh',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-
-
-    >
+    <>
       <div
-        className={` bg-[url('/src/assets/pic.jpg')] bg-cover bg-clip-text text-transparent text-9xl font-bold font-serif backdrop-blur-lg  p-2 mb-50
-      
-        `}
+        style={{
+          backgroundImage: `url(${bg})`,
+          height: '100vh',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+
+        }}
       >
-        {getTime()}
+        <div
+          className="
+    bg-[url('/src/assets/pic.jpg')]
+    bg-cover
+    bg-clip-text
+    text-transparent
+    font-bold
+    font-serif
+    backdrop-blur-lg
+    p-2
+        text-4xl        
+    sm:text-5xl
+    md:text-7xl
+    lg:text-9xl
+  "
+        >
+          {getTime()}
+        </div>
       </div>
-    </div>
 
-
+    </>
   )
 }
 
